@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Selektor elementu */
+        h1 {
+            color: blue;
+        }
+
+        /* Selektor klasy */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* Selektor identyfikatora */
+        #main-heading {
+            font-size: 24px;
+        }
+
+        /* Selektor potomka */
+        div p {
+            font-weight: bold;
+        }
+
+        /* Selektor atrybutu */
+        input[type="text"] {
+            border: 1px solid gray;
+        }
+
+        /* Pseudoklasy */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        li:first-child {
+            font-weight: bold;
+        }
+
+        li:last-child {
+            text-decoration: underline;
+        }
+
+        input:checked + label {
+            color: red;
+        }
+
+        :focus {
+            outline: 2px solid orange;
+        }
+
+        :disabled {
+            opacity: 0.5;
+        }
+
+        /* Pseudoelementy */
+        p::first-line {
+            text-transform: uppercase;
+        }
+
+        p::after {
+            content: " - Koniec.";
+            font-style: italic;
+        }
+
+        li::before {
+            content: "• ";
+            color: red;
+        }
+
+        h2::before {
+            content: "Nagłówek: ";
+        }
+
+        span::selection {
+            background-color: lightblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tytuł strony</h1>
+
+    <div class="highlight">
+        <h2>Nagłówek</h2>
+        <p>Paragraf 1</p>
+        <p>Paragraf 2</p>
+    </div>
+
+    <input type="text" placeholder="Wpisz tekst">
+
+    <p>To jest kolejny paragraf.</p>
+
+    <a href="#">Link</a>
+
+    <ul>
+        <li>Pierwszy element</li>
+        <li>Drugi element</li>
+        <li>Trzeci element</li>
+        <li>Czwarty element</li>
+    </ul>
+
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox">Zaznacz</label>
+
+    <input type="text" placeholder="Wpisz tekst" disabled>
+</body>
+</html>
